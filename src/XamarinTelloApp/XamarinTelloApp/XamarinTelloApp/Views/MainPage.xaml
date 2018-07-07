@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pge:LagoVistaContentPage     
+    xmlns:pge="clr-namespace:LagoVista.XPlat.Core;assembly=LagoVista.XPlat.Core"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    BackgroundColor="Beige"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinTelloApp.Views.MainPage"
+    LeftMenu="Menu" 
+    Title="Tello Xam">
+    <pge:LagoVistaContentPage.Content>
+        <StackLayout >
+            <Button Text="Connect" Command="{Binding RefreshNetworksCommand}" HeightRequest="80" WidthRequest="120" />
+            <Button Text="Take Off" Command="{Binding TakeoffCommand}" HeightRequest="80" WidthRequest="120" />
+            <Button Text="Land" Command="{Binding LandCommand}" HeightRequest="80" WidthRequest="120" />
+        </StackLayout>
+    </pge:LagoVistaContentPage.Content>
+</pge:LagoVistaContentPage>
